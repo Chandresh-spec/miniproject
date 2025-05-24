@@ -3,5 +3,5 @@ from django.shortcuts import HttpResponse
 # Create your views here.
 
 
-def home(reuqest):
+def home1(reuqest):
     return HttpResponse("this excution shows  setup is completed")
