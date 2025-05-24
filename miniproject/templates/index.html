@@ -9,5 +9,15 @@
 </head>
 <body>
     <h1>happy birthday  subham sir</h1>
+    <div class="img">
+    {% comment %} {%block content%} {% endcomment %}
+    {% for chai in chais %}
+    <img src="{{chai.image.url}}" alt="">
+    <a href="{%url 'contact' chai.id%}"><button>{{chai.type}} - {{chai.id}}</button></a>
+    <h2>{{chai.name}}</h2>
+    
+    {% endfor %}
+    {% comment %} {% endblock %} {% endcomment %}
+    </div>
 </body>
 </html>
