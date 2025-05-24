@@ -15,3 +15,10 @@ body{
 
     
 }
+
+button{   height:100px;
+    width:150px;
+    color:blue;
+    border:3px solid burlywood;
+    border-radius: 20px;
+}

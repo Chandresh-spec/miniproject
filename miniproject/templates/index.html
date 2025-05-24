@@ -13,6 +13,7 @@
     {% comment %} {%block content%} {% endcomment %}
     {% for chai in chais %}
     <img src="{{chai.image.url}}" alt="">
+    <br>
     <a href="{%url 'contact' chai.id%}"><button>{{chai.type}} - {{chai.id}}</button></a>
     <h2>{{chai.name}}</h2>
     
