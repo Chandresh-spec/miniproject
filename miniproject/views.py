@@ -5,3 +5,6 @@ from django.shortcuts import HttpResponse
 
 def home1(reuqest):
     return HttpResponse("this excution shows  setup is completed")
+
+def about(request):
+    return render(request,'index.html')
