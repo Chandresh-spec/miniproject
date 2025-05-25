@@ -6,12 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h>chai detial page</h1>
-    {% block  content%}
-    {% for  chai in chai_details %}
-    <h2>{{chai.description}}</h2>
-    <h2>{{chai.name}}</h2>
-    <h>{{chai.price}}</h2>
+    <h2>chai_review</h2>
+    {% block content %}
+    {% for chais in chai_review  %}
+    <h2>{{chais.reviewer_name}}</h2>
+    <h2>{{chais.rating}}</h2>
+    <h2>{{chais.comment}}</h2>
+
     {% endfor %}
     {% endblock %}
 </body>

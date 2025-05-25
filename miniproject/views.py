@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
-from .models import chaivarirty
+from .models import chaivarirty,ChaiDetails,ChaiReview
 from django.shortcuts import get_object_or_404
 # Create your views here.
 
@@ -16,3 +16,13 @@ def about(request):
 def contact(request,chai_id):
     chai=get_object_or_404(chaivarirty,pk=chai_id)
     return render(request,'chai.html',{'chai':chai})
+
+
+def chai_details(request):
+    chai_details=chaivarirty.objects.all()
+    return render(request,'chai.html',{'chai_details':chai_details})
+
+
+def chai_review(request):
+    chai_review=ChaiReview.objects.all()
+    return render(request,'chai_review.html',{'chai_review':chai_review})
