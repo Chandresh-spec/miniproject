@@ -6,11 +6,14 @@ body{
 }
 
 .img{
-    display: flex;
-    flex-direction: row;
+    
+    
     margin: 30px;
     width:250px;
     height:100px;
+    color:blue;
+    border:3px solid burlywood;
+    border-radius: 20px;
     
 
     
@@ -21,4 +24,5 @@ button{   height:100px;
     color:blue;
     border:3px solid burlywood;
     border-radius: 20px;
+
 }

@@ -16,3 +16,13 @@ class chaivarirty(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+class ChaiDetails(models.Model):
+    chai = models.OneToOneField(chaivarirty, on_delete=models.CASCADE)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    available = models.BooleanField(default=True)
+
+def __str__(self):
+        return f"Details of {self.chai.name}"
